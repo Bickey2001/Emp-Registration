@@ -1,0 +1,124 @@
+{
+  "employee": [
+    {
+      "fullname": "Anshuman Mishra",
+      "email": "asms785@gmail.com",
+      "phone": "9238648274",
+      "department": "Testing",
+      "designation": "Software Engineer",
+      "salary": 25000,
+      "dateofbirth": "2000-04-27T18:30:00.000Z",
+      "gender": "Male",
+      "id": 3
+    },
+    {
+      "fullname": "Supriya Mohapatra",
+      "email": "spm200@tgmail.com",
+      "phone": "9437158245",
+      "department": "Finance",
+      "designation": "Accountant",
+      "salary": 35000,
+      "dateofbirth": "2000-09-29T18:30:00.000Z",
+      "gender": "Male",
+      "id": 4
+    },
+    {
+      "fullname": "Jitaranjan Behera",
+      "email": "jitbh1995@gmail.com",
+      "phone": "93485896756",
+      "department": "Development",
+      "designation": "Software Engineer",
+      "salary": 45000,
+      "dateofbirth": "1995-05-24T18:30:00.000Z",
+      "gender": "Male",
+      "id": 5
+    },
+    {
+      "fullname": "Arpita Seth",
+      "email": "arps1999@gmail.com",
+      "phone": "7381386447",
+      "department": "Testing",
+      "designation": "Software Engineer",
+      "salary": 40000,
+      "dateofbirth": "1999-05-01T18:30:00.000Z",
+      "gender": "Female",
+      "id": 6
+    },
+    {
+      "fullname": "Haribhallav sahoo",
+      "email": "hbso789@gmail.com",
+      "phone": "7008589564",
+      "department": "Database",
+      "designation": "Chief Financial Officer",
+      "salary": 75000,
+      "dateofbirth": "1999-09-15T18:30:00.000Z",
+      "gender": "Male",
+      "id": 7
+    },
+    {
+      "fullname": "Jotiraj Majhi",
+      "email": "jtm2002@gmail.com",
+      "phone": "9348500674",
+      "department": "Development",
+      "designation": "Software Engineer",
+      "salary": 30000,
+      "dateofbirth": "2002-07-24T18:30:00.000Z",
+      "gender": "Male",
+      "id": 8
+    },
+    {
+      "fullname": "Dibya Darshan Sahoo",
+      "email": "ddhs258@gmail.com",
+      "phone": "9861745896",
+      "department": "Management",
+      "designation": "Techanical Manager",
+      "salary": 150000,
+      "dateofbirth": "1988-09-15T18:30:00.000Z",
+      "gender": "Male",
+      "id": 9
+    },
+    {
+      "fullname": "Bikram Keshari Das ",
+      "email": "bkdas@gmail.com",
+      "phone": "9348582469",
+      "department": "Development",
+      "designation": "Software Engineer",
+      "salary": 30000,
+      "dateofbirth": "1998-06-23T18:30:00.000Z",
+      "gender": "Male",
+      "id": 10
+    },
+    {
+      "fullname": "Kundan Kumar ",
+      "email": "kk98@gmail.com",
+      "phone": "7903131259",
+      "department": "Development",
+      "designation": "Software Engineer",
+      "salary": 45000,
+      "dateofbirth": "1998-10-15T18:30:00.000Z",
+      "gender": "Male",
+      "id": 11
+    },
+    {
+      "fullname": "Akshit Kumar ",
+      "email": "Akkumaar@gmaIl.com",
+      "phone": "9251978757",
+      "department": "Development",
+      "designation": "Software Engineer",
+      "salary": 46500,
+      "dateofbirth": "1999-08-28T18:30:00.000Z",
+      "gender": "Male",
+      "id": 12
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

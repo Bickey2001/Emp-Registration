@@ -1,0 +1,76 @@
+<!-- <p>employee works!</p> -->
+<!-- <p>dialog works!</p> -->
+<h1 mat-dialog-title>Add Employee Form</h1>
+<div mat-dialog-content>
+    <form [formGroup]="employeeForm" > 
+        <mat-form-field appearance="outline">
+            <mat-label>Full Name</mat-label>
+            <input type="text"formControlName="fullname" matInput placeholder="Enter your name"/>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <!-- <input type="text" formControlName="email" matInput placeholder="xyz@gmail.com" /> -->
+            <input matInput placeholder="pat@example.com" [formControl]="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Phone Number</mat-label>
+            <input  formControlName="phone" matInput name="phone">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Department</mat-label>
+            <!-- <input matInput formControlName="department" name="Department"> -->
+            <mat-select formControlName="department" placeholder="Department">
+                <mat-option value="Management">Management</mat-option>
+                <mat-option value="Development">Development</mat-option>
+                <mat-option value="Testing">Testing</mat-option>
+                <mat-option value="Database">Database</mat-option>
+                <mat-option value="Finance">Finance</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Date Of Birth</mat-label>
+            <input  formControlName="dateofbirth" matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <br>
+        <!-- <mat-form-field appearance="outline"> -->
+          <mat-radio-group formControlName="gender" aria-label="Select an option">
+            <mat-label><h2>Gender</h2></mat-label>
+            <!-- <br> -->
+            <mat-radio-button value="Male">Male</mat-radio-button>
+            <mat-radio-button value="Female">Female</mat-radio-button>
+          </mat-radio-group>
+        <!-- </mat-form-field> -->
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Designation</mat-label>
+            <input  formControlName="designation" matInput placeholder="Designation"/>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Salary</mat-label>
+            <input  formControlName="salary" matInput type="number" placeholder="Salary"/>
+        </mat-form-field>
+    </form>
+</div>
+<!-- <div mat-dialog-action [align]="end">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button mat-raised-button color="primary">Save</button>
+
+</div> -->
+<br>
+<br>
+<div mat-dialog-action class="button-container" >
+    <button mat-raised-button color="accent" mat-dialog-close>Close</button> 
+    <span class="button-space"></span> <!-- Add a space element -->
+    <button mat-raised-button color="primary" (click)="addEmployee()">{{actionBtn}}</button>
+</div>
+<!-- <input type="email" formControlName="email" matInput placeholder="xyz@gmail.com" [ngClass]="{'is-valid': submitted}"/>
+            <mat-error *ngIf="employeeForm.controls['email']?.touched && !employeeForm.hasError('required')">
+                Please enter a valid email address
+              </mat-error>
+              <mat-error *ngIf="employeeForm.hasError('required')">
+                Email is <strong>required</strong>
+              </mat-error> -->

@@ -1,0 +1,25 @@
+mat-form-field {
+    width: 100%;
+}
+
+.mat-radio-group {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+.button-container {
+    text-align: right;
+}
+
+.is-invalid {
+    border: 1px solid red;
+}
+
+.example-container mat-form-field+mat-form-field {
+    margin-left: 8px;
+}
+
+.button-space {
+    margin-left: 10px; /* Adjust this value to control the space between the buttons */
+}
